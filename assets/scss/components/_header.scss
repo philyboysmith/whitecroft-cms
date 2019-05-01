@@ -1,0 +1,45 @@
+header {
+	.container {
+		display: flex;
+		align-items: center;
+		// justify-content: space-between;
+		// align-items: flex-end;
+		flex-direction: column;
+		@include respond-min($tablet) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-end;
+			padding-top: 1.5rem;
+			padding-bottom: 1.5rem;
+		}
+	}
+	.logo {
+		max-width: 300px;
+		max-height: 38px;
+		width: 100%;
+		height: auto;
+		margin-bottom: 1rem;
+		@include respond-min($tablet) {
+			margin-bottom: 0;
+		}
+	}
+	nav ul {
+		font-size: 12px;
+		margin: 0;
+		padding: 0;
+		@include respond-min($tablet) {
+			font-size: 16px;
+			letter-spacing: 2px;
+		}
+	}
+
+	li {
+		font-family: 'Open Sans', sans-serif;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+	li:not(:last-child) {
+		border-right: #d0d0d0 2px solid;
+	    padding-right: .5rem;
+	}
+}

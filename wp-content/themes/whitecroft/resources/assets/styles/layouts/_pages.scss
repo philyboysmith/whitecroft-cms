@@ -1,0 +1,17 @@
+.content-wrapper {
+    @apply bg-white p-12 border-t-8  border-b-8 text-black;
+    border-top-color: config('colors.blue-dark');
+    border-bottom-color: config('colors.grey'); 
+}
+
+.team-wrapper {
+    @apply -mx-8
+}
+
+.team-wrapper .wp-block-image{
+    @apply border-r border-blue-light px-8;
+}
+
+.team-wrapper .wp-block-image:last-child{
+    @apply border-none;
+}

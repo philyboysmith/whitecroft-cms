@@ -1,0 +1,36 @@
+.banner .nav {
+  @apply list-reset font-semibold uppercase tracking-wide;
+}
+
+.banner .nav a {
+  @apply py-4 text-blue-dark block;
+
+  &:hover {
+    @apply text-blue-darker border-blue;
+  }
+}
+  .banner .nav .active a {
+    @apply text-blue-light ;
+  }
+
+@screen md {
+  .banner .nav {
+    @apply flex  ;
+  }
+
+  .banner .nav a {
+    @apply inline-block py-0 px-4 border-b-0 text-blue-dark border-r-2 border-grey-light;
+  
+    &:hover {
+      @apply text-blue-darker;
+    }
+  }
+  .banner .nav li:last-child a{
+    @apply border-none pr-0;
+  }
+  
+  #main-nav {
+    display:block!important; 
+  }
+  
+}

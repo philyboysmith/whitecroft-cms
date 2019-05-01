@@ -1,0 +1,69 @@
+body {
+	display: flex;
+	flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+#page {
+	padding-top: 2rem;
+	background-image: url('../images/buildings-desktop.jpg');
+	background-size: cover;
+	background-position: bottom 15% center;
+	background-repeat: no-repeat;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	@media screen and (orientation: portrait){
+		background-size: auto 150%;
+		background-position: bottom center;
+	}
+
+}
+
+.container {
+	// max-width: 900px;
+	max-width: $widescreen;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+.white-popup {
+  background: #FFF;
+  border-top: 6px solid $color-primary;
+  padding: 0 20px;
+  width: 100%;
+  overflow: auto;
+  text-align: justify;
+  @include respond-min($tablet) {
+	  position: absolute;
+	  top: 130px;
+	  bottom: 60px;
+	  z-index: 999;
+	  p {
+	  	font-size: 14px;
+	  }
+  }
+}
+
+@include respond-min($tablet) {
+.mfp-content {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 100%;
+}
+}
+
+.mfp-container {
+	padding: 0;
+}
+
+.mfp-bg {
+	background: transparent;
+}
+.mfp-close-btn-in .mfp-close:hover {
+	color: white;
+}

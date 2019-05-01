@@ -1,0 +1,24 @@
+footer {
+	background: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: $color-primary;
+	font-size: .625em;
+	p {
+		margin-bottom: 0;
+	}
+	.container {
+		display: flex;
+		align-items: flex-start;
+		// justify-content: space-between;
+		// align-items: flex-end;
+		flex-direction: column;
+		@include respond-min($tablet) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-end;
+			padding-top: 1.5rem;
+			padding-bottom: 1.5rem;
+		}
+	}
+}
