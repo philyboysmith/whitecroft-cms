@@ -1,8 +1,8 @@
 <header class="banner  relative bg-semi-transparent mt-10" >
 
     <div class="container py-4">
-      <div class="flex justify-between items-end flex-wrap">
-          <h1 class="w-1/3 max-w-xl m-0">
+      <div class="flex justify-between items-center md:items-end flex-wrap">
+          <h1 class="w-2/3 max-w-xs m-0">
             <a href="/">
               <img src="@asset('images/logo.svg')" class="block">
             </a>

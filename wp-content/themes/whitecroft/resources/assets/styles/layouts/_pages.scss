@@ -1,17 +1,44 @@
 .content-wrapper {
-    @apply bg-white p-12 border-t-8  border-b-8 text-black;
+    @apply bg-white p-12 border-t-8  border-b-8 text-black text-sm;
     border-top-color: config('colors.blue-dark');
     border-bottom-color: config('colors.grey'); 
 }
 
-.team-wrapper {
-    @apply -mx-8
+.content-wrapper p:not(:last-child){
+    @apply mb-2
 }
 
 .team-wrapper .wp-block-image{
-    @apply border-r border-blue-light px-8;
+    @apply border-b border-blue-light pb-6 mb-8;
+    img {
+        @apply mb-2 w-full;
+    }
+}
+
+@screen md {
+
+    .team-wrapper {
+        @apply -mx-12
+    }
+
+    .team-wrapper .wp-block-image{
+        @apply border-b-0 border-r border-blue-light px-12 w-1/3 pb-0 mb-0;
+        img {
+            @apply max-w-xs
+        }
+    }
 }
 
 .team-wrapper .wp-block-image:last-child{
     @apply border-none;
+}
+
+
+
+.wp-block-image figcaption {
+
+    strong {
+        @apply text-blue-light font-normal
+    }
+    @apply text-left text-black my-0;
 }
